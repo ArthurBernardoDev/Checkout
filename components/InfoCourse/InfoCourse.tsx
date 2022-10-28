@@ -2,7 +2,7 @@ import {use} from 'react'
 async function getCourse(id: number) {
   const res = await fetch(
     `https://my-json-server.typicode.com/ArthurBernardoDev/json_server/course/${id}`,
-    { cache: "no-store" }
+    { next: {revalidate: 86400}}
   );
   return res.json();
 }
@@ -23,6 +23,7 @@ export const InfoCourse = ({ id }: infoCourseProps) => {
               className={"rounded-t-lg"}
               src={course.image}
               width={400}
+              height={400}
             />
           </header>
           <div>
