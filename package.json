@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "concurrently next dev --turbo tailwindcss --input input.css --output output.css --watch",
+    "build": "tailwindcss input.css --output output.css && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
@@ -26,6 +26,7 @@
     "@types/react-dom": "18.0.7",
     "autoprefixer": "^10.4.12",
     "babel-jest": "^29.2.2",
+    "concurrently": "^7.5.0",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
     "jest-dom": "^4.0.0",
