@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Header: React.FC = () => {
+export const Header = () => {
   return (
     <div className={"flex items-center justify-between bg-[#1b3a4b] h-16"}>
       <div className={"py-4 px-8 xl:px-16 mt-2"}>
