@@ -11,16 +11,11 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
-    "jest": "^29.2.2",
     "next": "13.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-loading-skeleton": "^3.1.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@testing-library/dom": "^8.19.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@types/node": "18.11.5",
     "@types/react": "18.0.23",
     "@types/react-dom": "18.0.7",
